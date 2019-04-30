@@ -56,16 +56,18 @@ database.ref().push(newTrain);
         $("<td scope='col'>").text(frequency),
         $("<td scope='col'>").text(moment(arrival).format("hh:mm")),
         $("<td scope='col' class='minutes-away'>").text(minutes),
+        $("<td scope='col'> <button type='button' class = 'btn btn-default btn-sm' data-entry='" + snapshot.entry + "'> <i class='fa fa-trash' style='color:red'></i></button></td>")
     )
 
     $("#trainInfo").append(createNewRow)
 
-
-
-
   });
 
+$(document).on('click', '.btn-sm', function(){
+    database.ref($(this).data('entry')).remove();
+    $(this).parent().parent().remove();
 
+});
 
 
 
