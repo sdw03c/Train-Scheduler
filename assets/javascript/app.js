@@ -66,6 +66,8 @@ database.ref().push(newTrain);
 $(document).on('click', '.btn-sm', function(){
     database.ref($(this).data('entry')).remove();
     $(this).parent().parent().remove();
+    console.log($(this).parent().parent())
+    alert("Train has been deleted!")
 
 });
 
