@@ -1,0 +1,23 @@
+#background-image{
+    background: url("../images/crystalBackground.png"); 
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat
+}
+
+#main-container {
+    padding-top: 50px;
+    min-height: calc(100vh - 70px);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+#header{
+      color: #FFFFF0;
+      padding: 30px 0px
+  }
